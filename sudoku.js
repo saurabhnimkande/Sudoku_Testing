@@ -63,15 +63,11 @@ function solve(board,x,y){
 
 function runProgram(input) {
     // Write code here
-   input=input.trim().split("\n");
    for(let i=0; i<input.length; i++) {
-       matrix.push(input[i].trim().split(" ").map(Number));
+       matrix.push(input[i]);
    }
    solve(matrix,0,0);
    return matrix;
-   if(!flag) {
-    return "-1";
-   }
   }
 
 
